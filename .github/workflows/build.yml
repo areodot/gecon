@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build packages
-        run: pnpm run build --if-present
+        run: pnpm run build
       - name: Upload zip
         uses: actions/upload-artifact@v4
         with:
