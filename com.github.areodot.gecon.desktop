@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Gecon
+Comment=Stream games with GeForce NOW
+Type=Application
+Exec=/opt/gecon/gecon
+Icon=gecon
+StartupWMClass=gecon
+Categories=Network;Game;
+Keywords=Game;Streaming;GeForce;Now;GFN;

@@ -1,0 +1,48 @@
+{
+  "name": "gecon",
+  "appId": "com.github.areodot.gecon",
+  "productName": "gecon",
+  "description": "An open-source desktop wrapper for Nvidia GeForce NOW",
+  "version": "1.0.0",
+  "main": "build/main.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsc && electron .",
+    "build": "tsc && electron-builder --publish never"
+  },
+  "build": {
+    "linux": {
+      "files": [
+        "./build/**/*"
+      ],
+      "target": [
+        "zip"
+      ],
+      "category": "Games",
+      "artifactName": "${name}-${version}-linux.${ext}"
+    },
+    "extraFiles": [
+      "com.github.areodot.gecon.desktop"
+    ]
+  },
+  "author": {
+    "name": "Areodot",
+    "email": "areodot@proton.me"
+  },
+  "homepage": "https://github.com/areodot/gecon",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^22",
+    "electron": "^35",
+    "electron-builder": "^26"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "electron",
+      "electron-winstaller"
+    ]
+  }
+}
