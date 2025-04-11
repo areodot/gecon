@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: gecon-1.0.0-linux.zip
-          path: build/gecon-1.0.0-linux.zip
+          path: dist/gecon-1.0.0-linux.zip
